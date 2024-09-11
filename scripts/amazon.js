@@ -1,13 +1,15 @@
 import {cart, addToCart} from '../data/cart.js';
 import {products} from '../data/products.js';
 import {formatCurrency} from './utils/money.js';
+import { cart } from '../data/cart.js';
 
 let productsHTML = '';
 
 products.forEach((product) => {
   productsHTML += `
     <div class="product-container">
-      <div class="product-image-container">
+      <div class="pro
+      duct-image-container">
         <img class="product-image"
           src="${product.image}">
       </div>
@@ -79,3 +81,5 @@ document.querySelectorAll('.js-add-to-cart')
       updateCartQuantity();
     });
   });
+
+  document.write();
